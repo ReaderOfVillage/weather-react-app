@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     const [city, setCity] = useState("")
+    const [locationCity, setLocationCity] = useState("")
     const [country, setCountry] = useState("")
     const [time, setTime] = useState("")
     const [img, setImg] = useState("")
@@ -18,6 +19,7 @@ const Home = () => {
             console.log(result)
             setImg(result.data.current.imageUrl)
             setTemp(result.data.current.temperature)
+            setLocationCity(city)
         })
         .catch((err) => {
             console.log(err)
@@ -50,7 +52,7 @@ const Home = () => {
         <div className="weatherInfo">
             {temp !== "" ? (
                 <>
-                    <h1 className="temp" >Temperature in {city} {temp} °F</h1>
+                    <h1 className="temp" >Temperature in {locationCity}  {temp} °F</h1>
                     <img className="weatherImg" src={img} alt="weather" />
                 </>
             ) : (<h1 style={{ fontSize: '2vw' }}>Type in the city and country you want to get weather for</h1>)}
