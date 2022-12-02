@@ -50,7 +50,7 @@ const Home = () => {
         <div className="weatherInfo">
             {temp !== "" ? (
                 <>
-                    <h1 className="temp" >Temperature in Moscow {temp} °F</h1>
+                    <h1 className="temp" >Temperature in {city} {temp} °F</h1>
                     <img className="weatherImg" src={img} alt="weather" />
                 </>
             ) : (<h1 style={{ fontSize: '2vw' }}>Type in the city and country you want to get weather for</h1>)}
