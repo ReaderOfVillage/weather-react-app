@@ -1,0 +1,44 @@
+* {
+    color: white;
+    overflow: hidden;
+}
+
+.weatherForm {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #fbc053;
+    height: 100vh;
+    width: 25vw;
+    float: right;
+    gap: 20px;
+}
+
+.weatherInfo {
+    margin-left: 15vw;
+}
+
+.temp {
+    font-size: 2vw;
+}
+
+.cityInput {
+    color: black;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.sendBtn {
+    display: inline-block;
+    font-size: 2vh;
+}
+
+.time {
+    position: absolute;
+    bottom: 0;
+    font-size: 2vw;
+}
+
+.weatherImg {
+    width: 4vw;
+}

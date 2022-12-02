@@ -1,0 +1,48 @@
+body {
+  background-image: url('D:\\Stuff\\Sites\\weather-react-app\\client\src\\assets\\blur-background-1187974.jpg');
+  background-size: cover;
+}
+
+.cityInput, .countryInput {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+  margin-top: 3rem;
+  height: 50px;
+}
+
+.cityInput:focus, .countryInput:focus {
+  background-color: transparent;
+  box-shadow: none !important;
+  /* border: none; */
+  border-bottom: 2px solid tomato;
+  outline: none !important;
+}
+
+.weatherForm {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.getWeatherBtn {
+  background: rgb(248, 170, 25);
+  border: none;
+  border-radius: 7px;
+  width: 130px;
+  height: 30px;
+  margin-top: 75px;
+}
+
+.getWeatherBtn:active {
+  color: white;
+  
+}
+
+.city {
+  background: none;
+}
+
