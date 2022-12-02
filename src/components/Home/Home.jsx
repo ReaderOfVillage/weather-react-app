@@ -13,7 +13,7 @@ const Home = () => {
     const [temp, setTemp] = useState("")
 
     const getWeather = async () => {
-        await Axios.get('http://localhost:4000/getweather', { params: { city, country } })
+        await Axios.get('https://weather-react-app-backend.onrender.com/getweather', { params: { city, country } })
         .then((result) => {
             console.log(result)
             setImg(result.data.current.imageUrl)
