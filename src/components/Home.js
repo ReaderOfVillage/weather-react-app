@@ -16,7 +16,6 @@ const Home = () => {
     const getWeather = async () => {
         await Axios.get('https://weather-react-app-backend.onrender.com/getweather', { params: { city, country } })
         .then((result) => {
-            console.log(result)
             setImg(result.data.current.imageUrl)
             setTemp(result.data.current.temperature)
             setLocationCity(city)
